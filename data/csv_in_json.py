@@ -13,7 +13,8 @@ def covert(csv_file, json_file, model):
                     row["is_published"] = False
             result.append(row)
     with open(json_file, 'w', encoding="utf-8") as f:
-        f.write(json.dumps(result, ensure_ascii=False))
+        j = json.dumps(result, ensure_ascii=False)
+        f.write(j)
 
 
 if __name__ == '__main__':
