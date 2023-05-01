@@ -11,6 +11,7 @@ class Ad(models.Model):
 
     def serialize(self):
         return {
+        'id' : self.id,
         'name' : self.name,
         'author' : self.author,
         'price' : self.price,
