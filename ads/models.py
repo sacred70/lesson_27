@@ -10,5 +10,5 @@ class Ad(models.Model):
     is_published = models.BooleanField(default=False)
 
 
-class Categopy(models.Model):
+class Category(models.Model):
     name = models.CharField(max_length=200)
